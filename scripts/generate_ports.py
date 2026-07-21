@@ -68,7 +68,17 @@ def write_zip(path: Path, files: dict[str, bytes]):
             archive.writestr(info, files[name])
 
 
+# Wallpaper HEIC files are binary artwork generated from the approved engraving,
+# not palette templates. Preserve them while rebuilding every textual port.
+wallpaper_files = {
+    path.name: path.read_bytes()
+    for path in (PORTS / "wallpaper").glob("*.heic")
+} if (PORTS / "wallpaper").exists() else {}
 reset(PORTS)
+for filename, data in wallpaper_files.items():
+    path = PORTS / "wallpaper" / filename
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(data)
 
 for slug in DATA["themes"]:
     b = hexes(slug)
@@ -91,6 +101,9 @@ for slug in DATA["themes"]:
         ):
             text = replace_base((TEMPLATES/template).read_text(), slug)
             text = text.replace("Flexoki", title).replace("flexoki", suffix)
+            if app == "helix" and mode == "dark":
+                parent = f"stargazing_{slug.replace('-', '_')}_light"
+                text = re.sub(r'^inherits = ".*"$', f'inherits = "{parent}"', text, count=1, flags=re.M)
             if app == "yazi": write(PORTS/f"yazi/{suffix}.yazi/flavor.toml", text)
             else: write(PORTS/f"{app}/{suffix}.{ext}", text)
 

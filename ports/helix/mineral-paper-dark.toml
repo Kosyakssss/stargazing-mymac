@@ -1,4 +1,4 @@
-inherits = "mineral-paper-dark_light"
+inherits = "stargazing_mineral_paper_light"
 
 [palette]
 tx = "#C1C4C3"

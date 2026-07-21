@@ -1,4 +1,4 @@
-inherits = "gallery-plaster-dark_light"
+inherits = "stargazing_gallery_plaster_light"
 
 [palette]
 tx = "#C4C3BF"

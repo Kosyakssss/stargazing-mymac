@@ -1,4 +1,4 @@
-inherits = "blue-hour-dark_light"
+inherits = "stargazing_blue_hour_light"
 
 [palette]
 tx = "#BDC1C5"

@@ -1,3 +1,4 @@
+import AppKit
 import Foundation
 
 public struct AdapterContext: Sendable {
@@ -90,9 +91,15 @@ private struct HelixAdapter: ThemeAdapter {
             text = removingTOMLTable("theme", from: text)
             var lines = text.split(separator: "\n", omittingEmptySubsequences: false).map(String.init)
             lines.removeAll { $0.trimmingCharacters(in: .whitespaces).hasPrefix("theme =") }
-            lines.insert("theme = \"stargazing_\(c.selectedUnderscore)\"", at: 0)
+            let family = c.family.rawValue.replacingOccurrences(of: "-", with: "_")
+            lines.insert(contentsOf: [
+                "[theme]",
+                "dark = \"stargazing_\(family)_dark\"",
+                "light = \"stargazing_\(family)_light\"",
+                "",
+            ], at: 0)
             try writeLines(lines, to: config, paths: c.paths)
-            return result(self, .nextLaunch, "Selected stargazing_\(c.selectedUnderscore). Restart Helix or use :theme to refresh a running session.")
+            return result(self, .nextLaunch, "Selected the Stargazing \(c.family.name) light/dark pair. Restart Helix; terminals with mode 2031 support will select the matching appearance.")
         } catch { return result(self, .failed, error.localizedDescription) }
     }
 }
@@ -218,6 +225,27 @@ private struct PiAdapter: ThemeAdapter {
     }
 }
 
+private struct FeedreaderAdapter: ThemeAdapter {
+    let id = "feedreader"; let name = "Feedreader"
+
+    func requiredSources(in _: AdapterContext) -> [URL] { [] }
+
+    func apply(in c: AdapterContext) -> AdapterResult {
+        let config = c.paths.feedreaderRoot.appendingPathComponent("data/config.json")
+        do {
+            var object: [String: Any] = [:]
+            if let data = try? Data(contentsOf: config),
+               let existing = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
+                object = existing
+            }
+            object["theme"] = c.family.rawValue
+            let data = try JSONSerialization.data(withJSONObject: object, options: [.prettyPrinted, .sortedKeys])
+            try writeData(data + Data("\n".utf8), to: config, paths: c.paths)
+            return result(self, .appliedLive, "Selected Stargazing \(c.family.name); open Feedreader tabs pick it up within two seconds.")
+        } catch { return result(self, .failed, error.localizedDescription) }
+    }
+}
+
 private struct ObsidianAdapter: ThemeAdapter {
     let id = "obsidian"; let name = "Obsidian"
 
@@ -269,6 +297,55 @@ private struct ObsidianAdapter: ThemeAdapter {
             }
         }
         return Array(Set(found)).sorted { $0.path < $1.path }
+    }
+}
+
+private enum WallpaperError: LocalizedError {
+    case noDisplays
+
+    var errorDescription: String? {
+        switch self {
+        case .noDisplays: "No connected displays are available."
+        }
+    }
+}
+
+private struct WallpaperAdapter: ThemeAdapter {
+    let id = "wallpaper"; let name = "macOS Wallpaper"
+
+    func requiredSources(in c: AdapterContext) -> [URL] {
+        ThemeFamily.allCases.map { c.source("wallpaper/\($0.rawValue).heic") }
+    }
+
+    func apply(in c: AdapterContext) -> AdapterResult {
+        do {
+            var selected: URL?
+            for family in ThemeFamily.allCases {
+                let destination = c.paths.wallpaperRoot.appendingPathComponent("\(family.name).heic")
+                try c.installer.install(
+                    source: c.source("wallpaper/\(family.rawValue).heic"),
+                    destination: destination,
+                    adapterID: id,
+                    family: c.family
+                )
+                if family == c.family { selected = destination }
+            }
+            guard let selected else { return result(self, .failed, "Selected family wallpaper was not installed.") }
+            guard c.paths.applySystemWallpaper else {
+                return result(self, .appliedLive, "Installed all four appearance-aware HEIC files; system wallpaper change skipped by environment.")
+            }
+            let displayCount = try MainActor.assumeIsolated { () throws -> Int in
+                let screens = NSScreen.screens
+                guard !screens.isEmpty else { throw WallpaperError.noDisplays }
+                let workspace = NSWorkspace.shared
+                for screen in screens {
+                    let options = workspace.desktopImageOptions(for: screen) ?? [:]
+                    try workspace.setDesktopImageURL(selected, for: screen, options: options)
+                }
+                return screens.count
+            }
+            return result(self, .appliedLive, "Selected the \(c.family.name) appearance-aware wallpaper on \(displayCount) display\(displayCount == 1 ? "" : "s").")
+        } catch { return result(self, .failed, error.localizedDescription) }
     }
 }
 
@@ -337,6 +414,6 @@ private func removingMarkedBlock(begin: String, end: String, from text: String) 
 
 public enum AdapterCatalog {
     public static func standard() -> [any ThemeAdapter] {
-        [GhosttyAdapter(), HelixAdapter(), YaziAdapter(), BtopAdapter(), StarshipAdapter(), PiAdapter(), ObsidianAdapter(), HeliumAdapter()]
+        [WallpaperAdapter(), GhosttyAdapter(), HelixAdapter(), YaziAdapter(), BtopAdapter(), StarshipAdapter(), PiAdapter(), FeedreaderAdapter(), ObsidianAdapter(), HeliumAdapter()]
     }
 }

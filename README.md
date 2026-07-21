@@ -15,6 +15,8 @@ This is entirely vibe-coded specifically for me, so if you want to use it - I su
 
 Every supported app gets all four light variants and all four dark variants in its normal theme directory. The switcher changes the selected theme name in the app's real config. It does not build runtime theme overlays.
 
+The macOS wallpaper port installs four appearance-aware HEIC files under `~/Lib-rary/Wallpapers/Stargazing`. Each family file embeds a light and dark 6K image, so family selection changes the wallpaper while macOS appearance selects the matching embedded variant.
+
 ## Build and test
 
 ```sh
