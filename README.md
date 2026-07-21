@@ -9,22 +9,11 @@ A native macOS menu-bar controller for the four [Stargazing](https://github.com/
 
 Family selection and macOS appearance are independent. The menu contains only the four families, a real Dark Mode toggle, and Quit.
 
+This is entirely vibe-coded specifically for me, so if you want to use it - I suggest forking.
+
 ## Design
 
 Every supported app gets all four light variants and all four dark variants in its normal theme directory. The switcher changes the selected theme name in the app's real config. It does not build runtime theme overlays.
-
-Supported apps:
-
-- Ghostty
-- Helix
-- Yazi
-- btop
-- Starship
-- Pi
-- Obsidian
-- Helium, as a manual experimental package
-
-Fish, Bat, Telegram, fzf, tmux, and Neovim are intentionally excluded.
 
 ## Build and test
 
