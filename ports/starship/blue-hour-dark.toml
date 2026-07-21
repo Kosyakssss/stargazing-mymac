@@ -1,0 +1,18 @@
+# Stargazing Blue Hour Dark
+[palettes.stargazing_blue_hour_dark]
+bg = "#0E1115"
+bg2 = "#191C20"
+ui = "#24282C"
+ui2 = "#2F3337"
+ui3 = "#3A3D41"
+tx3 = "#505357"
+tx2 = "#7B7F83"
+tx = "#BDC1C5"
+red = "#D14D41"
+orange = "#DA702C"
+yellow = "#D0A215"
+green = "#879A39"
+cyan = "#3AA99F"
+blue = "#4385BE"
+purple = "#8B7EC8"
+magenta = "#CE5D97"

@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "Stargazing Mineral Paper Light for Helium",
+  "description": "Experimental Stargazing browser chrome theme built specifically for Helium.",
+  "theme": {
+    "colors": {
+      "frame": [
+        226,
+        229,
+        228
+      ],
+      "frame_inactive": [
+        226,
+        229,
+        228
+      ],
+      "toolbar": [
+        237,
+        240,
+        239
+      ],
+      "tab_text": [
+        104,
+        107,
+        106
+      ],
+      "tab_background_text": [
+        104,
+        107,
+        106
+      ],
+      "tab_background_text_inactive": [
+        170,
+        173,
+        173
+      ],
+      "toolbar_text": [
+        15,
+        17,
+        17
+      ],
+      "bookmark_text": [
+        104,
+        107,
+        106
+      ],
+      "ntp_background": [
+        237,
+        240,
+        239
+      ],
+      "ntp_text": [
+        15,
+        17,
+        17
+      ],
+      "ntp_link": [
+        36,
+        131,
+        123
+      ],
+      "button_background": [
+        226,
+        229,
+        228
+      ]
+    }
+  }
+}

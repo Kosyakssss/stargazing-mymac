@@ -1,0 +1,20 @@
+inherits = "soft-parchment-dark_light"
+
+[palette]
+tx = "#C5BFB4"
+tx-2 = "#817D76"
+tx-3 = "#54514D"
+ui-3 = "#3D3B38"
+ui-2 = "#32302F"
+ui = "#272524"
+bg-2 = "#1B1A1A"
+bg = "#100F0F"
+
+re = "#D14D41"
+or = "#DA702C"
+ye = "#D0A215"
+gr = "#879A39"
+cy = "#3AA99F"
+bl = "#4385BE"
+pu = "#8B7EC8"
+ma = "#CE5D97"

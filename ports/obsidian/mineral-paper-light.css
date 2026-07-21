@@ -1,0 +1,13 @@
+/* Stargazing Mineral Paper Light. Primary prose uses --text-normal. */
+body.stargazing-mineral-paper.theme-light {
+  --background-primary: #EDF0EF; --background-primary-alt: #E2E5E4;
+  --background-secondary: #E2E5E4; --background-secondary-alt: #D6D9D8;
+  --text-normal: #0F1111; --text-muted: #686B6A; --text-faint: #AAADAD;
+  --background-modifier-border: #D6D9D8; --background-modifier-border-hover: #CBCECD;
+  --background-modifier-hover: #D6D9D8; --background-modifier-active-hover: #C1C4C3;
+  --interactive-accent: #24837B; --interactive-accent-hover: #3AA99F;
+  --text-accent: #24837B; --text-accent-hover: #3AA99F;
+  --text-error: #AF3029; --text-success: #66800B; --text-warning: #BC5215;
+  --code-normal: #0F1111; --code-comment: #AAADAD; --code-function: #BC5215;
+  --code-string: #24837B; --code-value: #5E409D; --code-keyword: #66800B;
+}

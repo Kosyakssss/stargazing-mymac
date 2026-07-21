@@ -1,0 +1,13 @@
+/* Stargazing Soft Parchment Dark. Primary prose uses --text-normal. */
+body.stargazing-soft-parchment.theme-dark {
+  --background-primary: #100F0F; --background-primary-alt: #1B1A1A;
+  --background-secondary: #1B1A1A; --background-secondary-alt: #272524;
+  --text-normal: #C5BFB4; --text-muted: #817D76; --text-faint: #54514D;
+  --background-modifier-border: #272524; --background-modifier-border-hover: #32302F;
+  --background-modifier-hover: #272524; --background-modifier-active-hover: #3D3B38;
+  --interactive-accent: #3AA99F; --interactive-accent-hover: #5ABDAC;
+  --text-accent: #3AA99F; --text-accent-hover: #5ABDAC;
+  --text-error: #D14D41; --text-success: #879A39; --text-warning: #DA702C;
+  --code-normal: #C5BFB4; --code-comment: #54514D; --code-function: #DA702C;
+  --code-string: #3AA99F; --code-value: #8B7EC8; --code-keyword: #879A39;
+}

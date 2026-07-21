@@ -1,0 +1,20 @@
+inherits = "mineral-paper-dark_light"
+
+[palette]
+tx = "#C1C4C3"
+tx-2 = "#7E8080"
+tx-3 = "#525454"
+ui-3 = "#3B3E3E"
+ui-2 = "#313333"
+ui = "#262828"
+bg-2 = "#1A1C1C"
+bg = "#0F1111"
+
+re = "#D14D41"
+or = "#DA702C"
+ye = "#D0A215"
+gr = "#879A39"
+cy = "#3AA99F"
+bl = "#4385BE"
+pu = "#8B7EC8"
+ma = "#CE5D97"

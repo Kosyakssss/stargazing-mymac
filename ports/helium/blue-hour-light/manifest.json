@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "Stargazing Blue Hour Light for Helium",
+  "description": "Experimental Stargazing browser chrome theme built specifically for Helium.",
+  "theme": {
+    "colors": {
+      "frame": [
+        222,
+        226,
+        229
+      ],
+      "frame_inactive": [
+        222,
+        226,
+        229
+      ],
+      "toolbar": [
+        233,
+        237,
+        240
+      ],
+      "tab_text": [
+        102,
+        105,
+        110
+      ],
+      "tab_background_text": [
+        102,
+        105,
+        110
+      ],
+      "tab_background_text_inactive": [
+        167,
+        171,
+        175
+      ],
+      "toolbar_text": [
+        14,
+        17,
+        21
+      ],
+      "bookmark_text": [
+        102,
+        105,
+        110
+      ],
+      "ntp_background": [
+        233,
+        237,
+        240
+      ],
+      "ntp_text": [
+        14,
+        17,
+        21
+      ],
+      "ntp_link": [
+        36,
+        131,
+        123
+      ],
+      "button_background": [
+        222,
+        226,
+        229
+      ]
+    }
+  }
+}

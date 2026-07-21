@@ -1,0 +1,13 @@
+/* Stargazing Blue Hour Dark. Primary prose uses --text-normal. */
+body.stargazing-blue-hour.theme-dark {
+  --background-primary: #0E1115; --background-primary-alt: #191C20;
+  --background-secondary: #191C20; --background-secondary-alt: #24282C;
+  --text-normal: #BDC1C5; --text-muted: #7B7F83; --text-faint: #505357;
+  --background-modifier-border: #24282C; --background-modifier-border-hover: #2F3337;
+  --background-modifier-hover: #24282C; --background-modifier-active-hover: #3A3D41;
+  --interactive-accent: #3AA99F; --interactive-accent-hover: #5ABDAC;
+  --text-accent: #3AA99F; --text-accent-hover: #5ABDAC;
+  --text-error: #D14D41; --text-success: #879A39; --text-warning: #DA702C;
+  --code-normal: #BDC1C5; --code-comment: #505357; --code-function: #DA702C;
+  --code-string: #3AA99F; --code-value: #8B7EC8; --code-keyword: #879A39;
+}

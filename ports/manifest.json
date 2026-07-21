@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "families": [
+    "soft-parchment",
+    "gallery-plaster",
+    "mineral-paper",
+    "blue-hour"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "ports": {
+    "starship": 8,
+    "helium": 24,
+    "pi": 8,
+    "yazi": 16,
+    "btop": 8,
+    "obsidian": 12,
+    "helix": 8,
+    "ghostty": 8
+  }
+}

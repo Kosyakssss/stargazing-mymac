@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "Stargazing Soft Parchment Dark for Helium",
+  "description": "Experimental Stargazing browser chrome theme built specifically for Helium.",
+  "theme": {
+    "colors": {
+      "frame": [
+        27,
+        26,
+        26
+      ],
+      "frame_inactive": [
+        27,
+        26,
+        26
+      ],
+      "toolbar": [
+        16,
+        15,
+        15
+      ],
+      "tab_text": [
+        129,
+        125,
+        118
+      ],
+      "tab_background_text": [
+        129,
+        125,
+        118
+      ],
+      "tab_background_text_inactive": [
+        84,
+        81,
+        77
+      ],
+      "toolbar_text": [
+        197,
+        191,
+        180
+      ],
+      "bookmark_text": [
+        129,
+        125,
+        118
+      ],
+      "ntp_background": [
+        16,
+        15,
+        15
+      ],
+      "ntp_text": [
+        197,
+        191,
+        180
+      ],
+      "ntp_link": [
+        58,
+        169,
+        159
+      ],
+      "button_background": [
+        27,
+        26,
+        26
+      ]
+    }
+  }
+}

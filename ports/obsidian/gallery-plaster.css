@@ -1,0 +1,27 @@
+/* Stargazing Gallery Plaster Light. Primary prose uses --text-normal. */
+body.theme-light {
+  --background-primary: #F1EFEA; --background-primary-alt: #E6E4DF;
+  --background-secondary: #E6E4DF; --background-secondary-alt: #DAD8D4;
+  --text-normal: #111110; --text-muted: #6B6A68; --text-faint: #AEADA9;
+  --background-modifier-border: #DAD8D4; --background-modifier-border-hover: #CFCDC9;
+  --background-modifier-hover: #DAD8D4; --background-modifier-active-hover: #C4C3BF;
+  --interactive-accent: #24837B; --interactive-accent-hover: #3AA99F;
+  --text-accent: #24837B; --text-accent-hover: #3AA99F;
+  --text-error: #AF3029; --text-success: #66800B; --text-warning: #BC5215;
+  --code-normal: #111110; --code-comment: #AEADA9; --code-function: #BC5215;
+  --code-string: #24837B; --code-value: #5E409D; --code-keyword: #66800B;
+}
+
+/* Stargazing Gallery Plaster Dark. Primary prose uses --text-normal. */
+body.theme-dark {
+  --background-primary: #111110; --background-primary-alt: #1C1C1B;
+  --background-secondary: #1C1C1B; --background-secondary-alt: #282826;
+  --text-normal: #C4C3BF; --text-muted: #81807D; --text-faint: #545452;
+  --background-modifier-border: #282826; --background-modifier-border-hover: #333331;
+  --background-modifier-hover: #282826; --background-modifier-active-hover: #3E3E3C;
+  --interactive-accent: #3AA99F; --interactive-accent-hover: #5ABDAC;
+  --text-accent: #3AA99F; --text-accent-hover: #5ABDAC;
+  --text-error: #D14D41; --text-success: #879A39; --text-warning: #DA702C;
+  --code-normal: #C4C3BF; --code-comment: #545452; --code-function: #DA702C;
+  --code-string: #3AA99F; --code-value: #8B7EC8; --code-keyword: #879A39;
+}

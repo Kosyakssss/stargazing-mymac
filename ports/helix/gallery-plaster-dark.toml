@@ -1,0 +1,20 @@
+inherits = "gallery-plaster-dark_light"
+
+[palette]
+tx = "#C4C3BF"
+tx-2 = "#81807D"
+tx-3 = "#545452"
+ui-3 = "#3E3E3C"
+ui-2 = "#333331"
+ui = "#282826"
+bg-2 = "#1C1C1B"
+bg = "#111110"
+
+re = "#D14D41"
+or = "#DA702C"
+ye = "#D0A215"
+gr = "#879A39"
+cy = "#3AA99F"
+bl = "#4385BE"
+pu = "#8B7EC8"
+ma = "#CE5D97"

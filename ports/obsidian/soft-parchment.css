@@ -1,0 +1,27 @@
+/* Stargazing Soft Parchment Light. Primary prose uses --text-normal. */
+body.theme-light {
+  --background-primary: #F2EBDD; --background-primary-alt: #E6E0D2;
+  --background-secondary: #E6E0D2; --background-secondary-alt: #DBD5C8;
+  --text-normal: #100F0F; --text-muted: #6B6762; --text-faint: #AEA99F;
+  --background-modifier-border: #DBD5C8; --background-modifier-border-hover: #D0CABE;
+  --background-modifier-hover: #DBD5C8; --background-modifier-active-hover: #C5BFB4;
+  --interactive-accent: #24837B; --interactive-accent-hover: #3AA99F;
+  --text-accent: #24837B; --text-accent-hover: #3AA99F;
+  --text-error: #AF3029; --text-success: #66800B; --text-warning: #BC5215;
+  --code-normal: #100F0F; --code-comment: #AEA99F; --code-function: #BC5215;
+  --code-string: #24837B; --code-value: #5E409D; --code-keyword: #66800B;
+}
+
+/* Stargazing Soft Parchment Dark. Primary prose uses --text-normal. */
+body.theme-dark {
+  --background-primary: #100F0F; --background-primary-alt: #1B1A1A;
+  --background-secondary: #1B1A1A; --background-secondary-alt: #272524;
+  --text-normal: #C5BFB4; --text-muted: #817D76; --text-faint: #54514D;
+  --background-modifier-border: #272524; --background-modifier-border-hover: #32302F;
+  --background-modifier-hover: #272524; --background-modifier-active-hover: #3D3B38;
+  --interactive-accent: #3AA99F; --interactive-accent-hover: #5ABDAC;
+  --text-accent: #3AA99F; --text-accent-hover: #5ABDAC;
+  --text-error: #D14D41; --text-success: #879A39; --text-warning: #DA702C;
+  --code-normal: #C5BFB4; --code-comment: #54514D; --code-function: #DA702C;
+  --code-string: #3AA99F; --code-value: #8B7EC8; --code-keyword: #879A39;
+}

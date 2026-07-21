@@ -1,0 +1,13 @@
+/* Stargazing Gallery Plaster Light. Primary prose uses --text-normal. */
+body.stargazing-gallery-plaster.theme-light {
+  --background-primary: #F1EFEA; --background-primary-alt: #E6E4DF;
+  --background-secondary: #E6E4DF; --background-secondary-alt: #DAD8D4;
+  --text-normal: #111110; --text-muted: #6B6A68; --text-faint: #AEADA9;
+  --background-modifier-border: #DAD8D4; --background-modifier-border-hover: #CFCDC9;
+  --background-modifier-hover: #DAD8D4; --background-modifier-active-hover: #C4C3BF;
+  --interactive-accent: #24837B; --interactive-accent-hover: #3AA99F;
+  --text-accent: #24837B; --text-accent-hover: #3AA99F;
+  --text-error: #AF3029; --text-success: #66800B; --text-warning: #BC5215;
+  --code-normal: #111110; --code-comment: #AEADA9; --code-function: #BC5215;
+  --code-string: #24837B; --code-value: #5E409D; --code-keyword: #66800B;
+}

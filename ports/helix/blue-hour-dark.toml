@@ -1,0 +1,20 @@
+inherits = "blue-hour-dark_light"
+
+[palette]
+tx = "#BDC1C5"
+tx-2 = "#7B7F83"
+tx-3 = "#505357"
+ui-3 = "#3A3D41"
+ui-2 = "#2F3337"
+ui = "#24282C"
+bg-2 = "#191C20"
+bg = "#0E1115"
+
+re = "#D14D41"
+or = "#DA702C"
+ye = "#D0A215"
+gr = "#879A39"
+cy = "#3AA99F"
+bl = "#4385BE"
+pu = "#8B7EC8"
+ma = "#CE5D97"

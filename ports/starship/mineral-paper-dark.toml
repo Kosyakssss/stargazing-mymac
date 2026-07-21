@@ -1,0 +1,18 @@
+# Stargazing Mineral Paper Dark
+[palettes.stargazing_mineral_paper_dark]
+bg = "#0F1111"
+bg2 = "#1A1C1C"
+ui = "#262828"
+ui2 = "#313333"
+ui3 = "#3B3E3E"
+tx3 = "#525454"
+tx2 = "#7E8080"
+tx = "#C1C4C3"
+red = "#D14D41"
+orange = "#DA702C"
+yellow = "#D0A215"
+green = "#879A39"
+cyan = "#3AA99F"
+blue = "#4385BE"
+purple = "#8B7EC8"
+magenta = "#CE5D97"

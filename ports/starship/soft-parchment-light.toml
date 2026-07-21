@@ -1,0 +1,18 @@
+# Stargazing Soft Parchment Light
+[palettes.stargazing_soft_parchment_light]
+bg = "#F2EBDD"
+bg2 = "#E6E0D2"
+ui = "#DBD5C8"
+ui2 = "#D0CABE"
+ui3 = "#C5BFB4"
+tx3 = "#AEA99F"
+tx2 = "#6B6762"
+tx = "#100F0F"
+red = "#AF3029"
+orange = "#BC5215"
+yellow = "#AD8301"
+green = "#66800B"
+cyan = "#24837B"
+blue = "#205EA6"
+purple = "#5E409D"
+magenta = "#A02F6F"

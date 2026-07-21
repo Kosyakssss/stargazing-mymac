@@ -1,0 +1,70 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "Stargazing Gallery Plaster Dark for Helium",
+  "description": "Experimental Stargazing browser chrome theme built specifically for Helium.",
+  "theme": {
+    "colors": {
+      "frame": [
+        28,
+        28,
+        27
+      ],
+      "frame_inactive": [
+        28,
+        28,
+        27
+      ],
+      "toolbar": [
+        17,
+        17,
+        16
+      ],
+      "tab_text": [
+        129,
+        128,
+        125
+      ],
+      "tab_background_text": [
+        129,
+        128,
+        125
+      ],
+      "tab_background_text_inactive": [
+        84,
+        84,
+        82
+      ],
+      "toolbar_text": [
+        196,
+        195,
+        191
+      ],
+      "bookmark_text": [
+        129,
+        128,
+        125
+      ],
+      "ntp_background": [
+        17,
+        17,
+        16
+      ],
+      "ntp_text": [
+        196,
+        195,
+        191
+      ],
+      "ntp_link": [
+        58,
+        169,
+        159
+      ],
+      "button_background": [
+        28,
+        28,
+        27
+      ]
+    }
+  }
+}

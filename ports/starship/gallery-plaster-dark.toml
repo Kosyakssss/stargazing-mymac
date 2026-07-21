@@ -1,0 +1,18 @@
+# Stargazing Gallery Plaster Dark
+[palettes.stargazing_gallery_plaster_dark]
+bg = "#111110"
+bg2 = "#1C1C1B"
+ui = "#282826"
+ui2 = "#333331"
+ui3 = "#3E3E3C"
+tx3 = "#545452"
+tx2 = "#81807D"
+tx = "#C4C3BF"
+red = "#D14D41"
+orange = "#DA702C"
+yellow = "#D0A215"
+green = "#879A39"
+cyan = "#3AA99F"
+blue = "#4385BE"
+purple = "#8B7EC8"
+magenta = "#CE5D97"

@@ -1,0 +1,13 @@
+/* Stargazing Blue Hour Light. Primary prose uses --text-normal. */
+body.stargazing-blue-hour.theme-light {
+  --background-primary: #E9EDF0; --background-primary-alt: #DEE2E5;
+  --background-secondary: #DEE2E5; --background-secondary-alt: #D3D7DA;
+  --text-normal: #0E1115; --text-muted: #66696E; --text-faint: #A7ABAF;
+  --background-modifier-border: #D3D7DA; --background-modifier-border-hover: #C8CCCF;
+  --background-modifier-hover: #D3D7DA; --background-modifier-active-hover: #BDC1C5;
+  --interactive-accent: #24837B; --interactive-accent-hover: #3AA99F;
+  --text-accent: #24837B; --text-accent-hover: #3AA99F;
+  --text-error: #AF3029; --text-success: #66800B; --text-warning: #BC5215;
+  --code-normal: #0E1115; --code-comment: #A7ABAF; --code-function: #BC5215;
+  --code-string: #24837B; --code-value: #5E409D; --code-keyword: #66800B;
+}
